@@ -1,0 +1,70 @@
+{
+  "weather": {
+    "locationName": "Twist",
+    "updateInterval": 15,
+    "services": [
+      {
+        "name": "DarkSy",
+        "active": false,
+        "url": "https://api.darksky.net/forecast/",
+        "apiKey": "",
+        "lang": "de",
+        "units": "si",
+        "location": {
+          "langitude": 52.6353716,
+          "longitude": 7.1083788
+        }
+      },
+      {
+        "name": "OpenWeatherMap",
+        "active": true,
+        "url": "https://api.openweathermap.org/data/2.5/weather",
+        "https": null,
+        "apiKey": "",
+        "lang": "de",
+        "units": "metric",
+        "location": {
+          "langitude": 52.6353716,
+          "longitude": 7.1083788
+        }
+      }
+    ]
+  },
+  "news": {
+    "updateInterval": 30,
+    "maxItems": 5,
+    "items": [
+      {
+        "provider": "DeutscheWelle",
+        "url": "https://rss.dw.com/xml/rss-de-top",
+        "parentContainerClass": "div.longText",
+        "textContainerTag": "p"
+      }
+    ]
+  },
+  "voice": {
+    "provider": [
+      {
+        "name": "azure",
+        "active": true,
+        "subscriptionKey": "",
+        "serverRegion": "westeurope",
+        "lang": "de-DE"
+      },
+      {
+        "name": "google",
+        "active": false
+      }
+    ],
+    "weather": "Es ist momentan ${temparatur} Grad in ${location}.",
+    "newsVoice": {
+      "headline": "Die Top Themen des Tages.",
+      "articleSeperator": "Nächster Artikel."
+    },
+    "voiceOrder": [
+      "Weather",
+      "News"
+    ]
+  }
+}
+
